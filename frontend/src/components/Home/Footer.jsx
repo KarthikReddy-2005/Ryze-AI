@@ -1,0 +1,43 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <>
+      <style>{`
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            
+                * {
+                    font-family: 'Poppins', sans-serif;
+                }
+            `}</style>
+
+      <footer className="flex flex-col md:flex-row gap-3 items-center mt-40 justify-around w-full py-4 text-sm bg-orange-500 text-white/70">
+        <p>Copyright © 2025 Ryze AI. All rights reservered.</p>
+        <div className="flex items-center gap-4">
+          <a
+            href="mailto:hello@get-ryze.ai"
+            className="hover:text-white transition-all"
+          >
+            Contact Us
+          </a>
+          <div className="h-8 w-px bg-white/20"></div>
+          <a
+            href="https://www.get-ryze.ai/privacy"
+            className="hover:text-white transition-all"
+          >
+            Privacy Policy
+          </a>
+          <div className="h-8 w-px bg-white/20"></div>
+          <a
+            href="https://www.get-ryze.ai/term-services"
+            className="hover:text-white transition-all"
+          >
+            Trademark Policy
+          </a>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
